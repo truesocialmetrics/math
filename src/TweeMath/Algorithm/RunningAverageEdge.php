@@ -7,17 +7,17 @@ class RunningAverageEdge
     {
         $output = RunningAverage::apply($input, $windowSize);
 
-        if (count($input) % $windowSize == 0) return $output;
-
         // start
         $y = reset($input);
         $x = key($input);
         $output[$x] = $y;
 
-        // finish
-        $y = end($input);
-        $x = key($input);
-        $output[$x] = $y;
+        if (count($input) % $windowSize != 0) {
+            // finish
+            $y = end($input);
+            $x = key($input);
+            $output[$x] = $y;
+        }
 
         ksort($output);
         return $output;

@@ -7,9 +7,9 @@ class RunningAverageEdgeTest extends PHPUnit_Framework_TestCase
     public function testFitWindow()
     {
         $input = array(0 => 0, 1 => 2, 3 => 3, 4 => 5, 5 => 3, 6 => 1);
-        $output = array(1 => 1,  4 => 4, 6 => 2);
+        $output = array(0 =>0, 1 => 1,  4 => 4, 6 => 2);
         $this->assertEquals($output, RunningAverageEdge::apply($input, 2));
-        $this->assertEquals(array(1, 4, 6), array_keys(RunningAverageEdge::apply($input, 2)));
+        $this->assertEquals(array(0, 1, 4, 6), array_keys(RunningAverageEdge::apply($input, 2)));
     }
     public function testNotFitWindow()
     {
