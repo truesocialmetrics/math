@@ -19,6 +19,7 @@ class RunningAverageEdge
         $x = key($input);
         $output[$x] = $y;
 
+        ksort($output);
         return $output;
     }
 }
