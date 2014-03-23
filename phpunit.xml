@@ -12,7 +12,7 @@
          bootstrap="tests/bootstrap.php"
 >
     <testsuites>
-        <testsuite name="TweeHtml">
+        <testsuite name="TweeMath">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

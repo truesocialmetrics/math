@@ -1,7 +1,7 @@
 {
     "name": "necromant2005/tt-html",
     "type": "library",
-    "description": "php standard math algorithms: running average, linear extrapolation",
+    "description": "php standard math algorithms: running average, linear interpolation",
     "keywords": ["math", "running average", "linear extrapolation"],
     "homepage": "https://github.com/necromant2005/tt-math",
     "license": "MIT",
