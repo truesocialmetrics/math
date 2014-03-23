@@ -9,4 +9,10 @@ class LinearInterpolationTest extends PHPUnit_Framework_TestCase
         $input = array(0 => 0, 1 => 1);
         $this->assertEquals(2, LinearInterpolation::apply($input, 2));
     }
+
+    public function testLnerExtrapolationFor3Points()
+    {
+        $input = array(0 => 0, 1 => 1, 2 => 1);
+        $this->assertEquals(2, LinearInterpolation::apply($input, 4));
+    }
 }
