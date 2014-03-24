@@ -14,6 +14,8 @@ Features / Goals
 * Implementation Running Average with custom window size
 * Implementation Running Average with custom window size and Edge binding
 * Implementation Linear interpolation
+* Implementation Derivative
+* Implementation Local Extremum
 
 Installation
 ------------
@@ -59,4 +61,20 @@ Linear interpolation for the next point x=2
 use TweeMath\Algorithm;
 
 Algorithm\LinearInterpolation(array(0 => 0, 1 => 1), 2); // 2
+```
+
+Derivative for input with epsilon = 1
+```php
+use TweeMath\Algorithm;
+
+Algorithm\Derivative(array(0 => 0, 1 => 2, 4 => 5, 6 => 1), 1); 
+// array(0 => 2, 1 => 3, 4 => -5)
+```
+
+Local Extremum's for input with epsilon = 1
+```php
+use TweeMath\Algorithm;
+
+Algorithm\LocalExtremum(array(0 => 0, 1 => 2, 2 => 4,  3 => 3, 4 => 5, 5 => 3, 6 => 1), 1); 
+// array(2 => -1, 3 => 2, 4 => -2)
 ```

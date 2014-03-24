@@ -1,8 +1,8 @@
 {
     "name": "necromant2005/tt-math",
     "type": "library",
-    "description": "php standard math algorithms: running average, linear interpolation",
-    "keywords": ["math", "running average", "linear interpolation"],
+    "description": "php standard math algorithms: running average, linear interpolation, derivative, local extremum",
+    "keywords": ["math", "running average", "linear interpolation", "derivative", "local extremum"],
     "homepage": "https://github.com/necromant2005/tt-math",
     "license": "MIT",
     "authors": [
