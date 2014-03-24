@@ -17,4 +17,11 @@ class DerivativeTest extends PHPUnit_Framework_TestCase
         $output = array(0 => 2, 1 => 3, 4 => -5);
         $this->assertEquals($output, Derivative::apply($input, 1));
     }
+
+    public function testNOtEnothgElemetsArray()
+    {
+        $input = array(0 => 1);
+        $output = array();
+        $this->assertEquals($output, Derivative::apply($input, 1));
+    }
 }
