@@ -5,6 +5,9 @@ class LinearInterpolation
 {
     public static function apply(array $input, $nextPosition)
     {
+        if (count($input) < 2) {
+            return reset($input);
+        }
         $y0 = reset($input);
         $x0 = key($input);
         $y1 = end($input);
