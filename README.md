@@ -63,6 +63,14 @@ use TweeMath\Algorithm;
 Algorithm\LinearInterpolation(array(0 => 0, 1 => 1), 2); // 2
 ```
 
+Linear interpolation for large numbers for the next point max + 2
+```php
+use TweeMath\Algorithm;
+
+$max = (PHP_MAX_INT >> 1)  + 1000;
+Algorithm\LinearInterpolationGracefull(array(time() => $max, time() + 1 => $max + 1), time() + 2); // $max + 2
+```
+
 Derivative for input with epsilon = 1
 ```php
 use TweeMath\Algorithm;
