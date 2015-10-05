@@ -21,5 +21,4 @@ class LinearInterpolationTest extends PHPUnit_Framework_TestCase
         $input = array(1 => 1);
         $this->assertEquals(1, LinearInterpolation::apply($input, 2));
     }
-
 }
