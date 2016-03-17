@@ -10,7 +10,8 @@ class RunningAverage
         foreach ($input as $position => $value) {
             $aggregation[] = $value;
             if (count($aggregation) < $windowSize) continue;
-            $output[$position] = array_sum($aggregation) / count($aggregation);
+            $variable = array_sum($aggregation) / count($aggregation);
+            $output[$position] = $variable;
             $aggregation = array();
         }
         return $output;

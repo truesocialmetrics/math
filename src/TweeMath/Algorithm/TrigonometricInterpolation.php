@@ -6,6 +6,9 @@ class TrigonometricInterpolation
 {
     public static function apply(array $input, $nextPosition)
     {
+        if (empty($input)) {
+            return 0;
+        }
         if (count($input) < 2) {
             return reset($input);
         }
