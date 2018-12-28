@@ -1,8 +1,8 @@
 <?php
 namespace TweeMath\Algorithm;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class LinearInterpolationTest extends PHPUnit_Framework_TestCase
+class LinearInterpolationTest extends TestCase
 {
     public function testLnerExtrapolationFor2Points()
     {

@@ -1,8 +1,8 @@
 <?php
 namespace TweeMath\Algorithm;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class RunningAverageTest extends PHPUnit_Framework_TestCase
+class RunningAverageTest extends TestCase
 {
     public function testFitWindow()
     {

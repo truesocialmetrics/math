@@ -1,8 +1,8 @@
 <?php
 namespace TweeMath\Algorithm;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class TrigonometricInterpolationTest extends PHPUnit_Framework_TestCase
+class TrigonometricInterpolationTest extends TestCase
 {
     public function testLnerExtrapolationFor2Points()
     {

@@ -1,9 +1,9 @@
 {
-    "name": "necromant2005/tt-math",
+    "name": "truesocialmetrics/math",
     "type": "library",
     "description": "php standard math algorithms: running average, linear interpolation, derivative, local extremum",
     "keywords": ["math", "running average", "linear interpolation", "derivative", "local extremum"],
-    "homepage": "https://github.com/necromant2005/tt-math",
+    "homepage": "https://github.com/truesocialmetrics/math",
     "license": "MIT",
     "authors": [
         {
@@ -14,11 +14,11 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=7.1"
     },
     "autoload": {
-        "psr-0": {
-            "TweeMath": "src/"
+        "psr-4": {
+            "TweeMath\\": "src/TweeMath"
         }
     }
 }
